@@ -38,8 +38,8 @@ resource "aws_vpc" "sonar" {
     }
 
     resource "aws_instance" "mySonarInstance" {
-      ami           = "ami-0866a3c8686eaeeba"
-      key_name = "mykey"
+      ami           = "ami-0ea3c35c5c3284d82"
+      key_name = "myPracticeKey"
       instance_type = "t2.micro"
       vpc_security_group_ids = [aws_security_group.security_sonar_group_2023.id]
 
